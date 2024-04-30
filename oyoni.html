@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OYONI</title>
+    <style>
+        h1 {
+            text-align: center; /* Center align the text */
+            font-size: 36px; /* Increase font size */
+        }
+        .container {
+            max-width: 800px; /* Set maximum width for content */
+            margin: 0 auto; /* Center content horizontally */
+            padding: 20px; /* Add some padding for better appearance */
+        }
+        .button-container {
+            text-align: center; /* Center align the button */
+            margin-top: 20px; /* Add some space between the navigation and the button */
+        }
+    </style>
 </head>
 <body>
-    <h1>OYONI</h1>
-    <nav>
-        <ul>
-            <li><a href="Read_Image.html">Read Image</a></li>
-            <li><a href="Describe_People.html">Describe People</a></li>
-            <li><a href="Read_Text.html">Read Text</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>OYONI</h1>
+        <nav>
+            <ul>
+                <li><a href="Read_Image.html">Read Image</a></li>
+                <li><a href="Describe_People.html">Describe People</a></li>
+                <li><a href="Read_Text.html">Read Text</a></li>
+                <li><a href="Memories.html">Memories</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="button-container">
+        <button id="playButton">Say Hello</button>
+    </div>
+
+    <script>
+        // Get the button element
+        var button = document.getElementById('playButton');
+
+        // Add event listener to the button
+        button.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('/Users/l2-kharoufeh/Desktop/EyeGlasses/ElevenLabs_2024-04-30T21_22_01_Serena.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+    </script>
 </body> 
 </html>
