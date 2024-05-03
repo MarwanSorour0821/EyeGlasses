@@ -47,7 +47,7 @@
     <div class="container">
         <h1>OYONI</h1>
         <div class="link">
-            <a href="Home.html" class="text">Home</a>
+            <a href="oyoni.html" class="text">Home</a>
           </div>
         <div class="link">
             <a href="Read_Image.html" class="text">Read Image</a>
@@ -78,6 +78,47 @@
         </button>
     </div>
 
+    <div class="container">
+        <p>User: "My Birthday"</p>
+    </div>
+
+    <div class="button-container">
+        <button id="birthdayButton">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text"> Birthday Memory</span>
+        </button>
+    </div>
+
+    <div class="button-container">
+        <button id="navigateOtherMemories">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text"> Navigate Other Memories</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <p>User: "Yes, groceries list"</p>
+    </div>
+
+    <div class="button-container">
+        <button id="groceriesList">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Grocery List</span>
+        </button>
+    </div>
+
     <script>
         // Get the button element
         var button = document.getElementById('playButton');
@@ -85,10 +126,35 @@
         // Add event listener to the button
         button.addEventListener('click', function() {
             // Create an audio element
-            var audio = new Audio('/Users/marwansorour/Desktop/EyeGlasses/Select Memory.mp3'); 
+            var audio = new Audio('AudioFiles/Select Memory.mp3'); 
             // Play the audio
             audio.play();
         });
+
+        var birthday_button = document.getElementById('birthdayButton');
+        birthday_button.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/Birthday Memory.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
+        var navigateOtherMemoriesButton = document.getElementById('navigateOtherMemories');
+        navigateOtherMemoriesButton.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/navigate other memories.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
+        var groceriesListButton = document.getElementById('groceriesList');
+        groceriesListButton.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/grocery list.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
     </script>
 </body> 
 </html>
