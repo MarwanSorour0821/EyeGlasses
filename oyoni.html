@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
     <title>OYONI</title>
     <style>
         h1 {
@@ -11,31 +12,75 @@
         }
         .container {
             max-width: 800px; /* Set maximum width for content */
-            margin: 0 auto; /* Center content horizontally */
+            margin: 20 auto; /* Center content horizontally */
             padding: 20px; /* Add some padding for better appearance */
         }
         .button-container {
             text-align: center; /* Center align the button */
             margin-top: 20px; /* Add some space between the navigation and the button */
         }
+        .link a {
+            text-decoration: none; /* Remove underline */
+            color: #888; /* Set link color to light grey */
+            transition: color 0.3s; /* Smooth transition for color change */
+        }
+        /* Change link color on hover */
+        .link a:hover {
+            color: #fff;
+        }
+
+        #playButton {
+            margin-top: 20px;
+            margin-bottom: 20px; /* Add space between button and links */
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>OYONI</h1>
-        <nav>
-            <ul>
-                <li><a href="Read_Image.html">Read Image</a></li>
-                <li><a href="Describe_People.html">Describe People</a></li>
-                <li><a href="Read_Text.html">Read Text</a></li>
-                <li><a href="Memories.html">Memories</a></li>
-            </ul>
-        </nav>
+        <div class="link">
+            <a href="Home.html" class="text">Home</a>
+          </div>
+        <div class="link">
+            <a href="Read_Image.html" class="text">Read Image</a>
+          </div>
+          <div class="link">
+            <a href="Describe_People.html" class="text">Describe People</a>
+          </div>
+          <div class="link">
+            <a href="Read_Text.html" class="text">Read Text</a>
+          </div>
+          <div class="link">
+            <a href="Memories.html" class="text">Memories</a>
+          </div>
     </div>
     
     <div class="button-container">
-        <button id="playButton">Say Hello</button>
+        <button id="playButton">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Say Hello</span>
+        </button>
     </div>
+<!-- 
+  <div class="container">
+    <div class="link">
+      <a href="Read_Image.html" class="text">Read Image</a>
+    </div>
+    <div class="link">
+      <a href="Describe_People.html" class="text">Describe People</a>
+    </div>
+    <div class="link">
+      <a href="Read_Text.html" class="text">Read Text</a>
+    </div>
+    <div class="link">
+      <a href="Memories.html" class="text">Memories</a>
+    </div>
+  </div> -->
 
     <script>
         // Get the button element
@@ -44,7 +89,7 @@
         // Add event listener to the button
         button.addEventListener('click', function() {
             // Create an audio element
-            var audio = new Audio('/Users/l2-kharoufeh/Desktop/EyeGlasses/ElevenLabs_2024-04-30T21_22_01_Serena.mp3'); 
+            var audio = new Audio('/Users/marwansorour/Desktop/EyeGlasses/ElevenLabs_2024-05-02T19_41_48_Serena.mp3'); 
             // Play the audio
             audio.play();
         });

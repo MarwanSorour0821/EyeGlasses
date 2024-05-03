@@ -14,11 +14,10 @@
             max-width: 800px; /* Set maximum width for content */
             margin: 20 auto; /* Center content horizontally */
             padding: 20px; /* Add some padding for better appearance */
-            text-align: center;
         }
         .button-container {
             text-align: center; /* Center align the button */
-            margin-top: 10px; /* Add some space between the navigation and the button */
+            margin-top: 20px; /* Add some space between the navigation and the button */
         }
         .link a {
             text-decoration: none; /* Remove underline */
@@ -33,12 +32,6 @@
         #playButton {
             margin-top: 20px;
             margin-bottom: 20px; /* Add space between button and links */
-        }
-
-        /* Center the text in the first_dialogue div */
-        .first_dialogue {
-            text-align: center;
-            margin-bottom: 20px; /* Add some space between the dialogue and button */
         }
 
     </style>
@@ -62,10 +55,6 @@
             <a href="Memories.html" class="text">Memories</a>
           </div>
     </div>
-
-    <div class="container">
-        <p>User asks OYONI to "Describe Memory"</p>
-    </div>
     
     <div class="button-container">
         <button id="playButton">
@@ -74,7 +63,7 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">OYONI's Response</span>
+            <span class="text">Say Hello</span>
         </button>
     </div>
 
@@ -85,7 +74,7 @@
         // Add event listener to the button
         button.addEventListener('click', function() {
             // Create an audio element
-            var audio = new Audio('/Users/marwansorour/Desktop/EyeGlasses/Select Memory.mp3'); 
+            var audio = new Audio('/Users/marwansorour/Desktop/EyeGlasses/ElevenLabs_2024-05-02T19_41_48_Serena.mp3'); 
             // Play the audio
             audio.play();
         });
