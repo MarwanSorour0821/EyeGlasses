@@ -14,10 +14,11 @@
             max-width: 800px; /* Set maximum width for content */
             margin: 20 auto; /* Center content horizontally */
             padding: 20px; /* Add some padding for better appearance */
+            text-align: center;
         }
         .button-container {
             text-align: center; /* Center align the button */
-            margin-top: 20px; /* Add some space between the navigation and the button */
+            margin-top: 10px; /* Add some space between the navigation and the button */
         }
         .link a {
             text-decoration: none; /* Remove underline */
@@ -55,6 +56,10 @@
             <a href="Memories.html" class="text">Memories</a>
           </div>
     </div>
+
+    <div class="container">
+        <p>User: "Read Text"</p>
+    </div>
     
     <div class="button-container">
         <button id="playButton">
@@ -63,8 +68,53 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Say Hello</span>
+            <span class="text">OYONI's Response</span>
         </button>
+    </div>
+
+    <div class="button-container">
+        <button id="optionsAfterReadingText">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Options After Reading Text</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <p>User: "Begin With New Text"</p>
+    </div>
+
+    <div class="button-container">
+        <button id="notDetectedText">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Response</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <p>User: "Try Again"</p>
+    </div>
+
+    <div class="button-container">
+        <button id="boarding">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Boarding Response</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <p>User: "Done"</p>
     </div>
 
     <script>
@@ -74,7 +124,37 @@
         // Add event listener to the button
         button.addEventListener('click', function() {
             // Create an audio element
-            var audio = new Audio('/Users/marwansorour/Desktop/EyeGlasses/ElevenLabs_2024-05-02T19_41_48_Serena.mp3'); 
+            var audio = new Audio('AudioFiles/Read_Text_Reinforce.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
+        var optionsButton = document.getElementById('optionsAfterReadingText');
+
+        // Add event listener to the button
+        optionsButton.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/options.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
+        var notDetectedText = document.getElementById('notDetectedText');
+
+        // Add event listener to the button
+        notDetectedText.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/textNotDetected.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
+        var boarding = document.getElementById('boarding');
+
+        // Add event listener to the button
+        boarding.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/boarding.mp3'); 
             // Play the audio
             audio.play();
         });
