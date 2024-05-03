@@ -45,7 +45,7 @@
             <a href="oyoni.html" class="text">Home</a>
           </div>
         <div class="link">
-            <a href="Read_Image.html" class="text">Read Image</a>
+            <a href="Read_Image.html" class="text">Describe Scene</a>
           </div>
           <div class="link">
             <a href="Describe_People.html" class="text">Describe People</a>
@@ -69,7 +69,7 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Describe Person</span>
+            <span class="text">OYONI's Response</span>
         </button>
     </div>
 
@@ -81,7 +81,7 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Save Contact</span>
+            <span class="text">OYONI's Response</span>
         </button>
     </div>
 
@@ -96,7 +96,7 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Contact Saved</span>
+            <span class="text">OYONI's Response</span>
         </button>
     </div>
 
@@ -107,7 +107,7 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Choose Option</span>
+            <span class="text">OYONI's Response</span>
         </button>
     </div>
 
@@ -122,7 +122,7 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Try Again</span>
+            <span class="text">OYONI's Response</span>
         </button>
     </div>
 
@@ -137,7 +137,7 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Describe Man</span>
+            <span class="text">OYONI's Response</span>
         </button>
     </div>
 
@@ -148,12 +148,22 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Choose Option</span>
+            <span class="text">OYONI's Response</span>
         </button>
     </div>
 
     <script>
         // Get the button element
+        var button = document.getElementById('people');
+
+        // Add event listener to the button
+        button.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/people.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
         var button = document.getElementById('save_contact');
 
         // Add event listener to the button
