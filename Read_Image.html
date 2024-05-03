@@ -14,10 +14,11 @@
             max-width: 800px; /* Set maximum width for content */
             margin: 20 auto; /* Center content horizontally */
             padding: 20px; /* Add some padding for better appearance */
+            text-align: center;
         }
         .button-container {
             text-align: center; /* Center align the button */
-            margin-top: 20px; /* Add some space between the navigation and the button */
+            margin-top: 10px; /* Add some space between the navigation and the button */
         }
         .link a {
             text-decoration: none; /* Remove underline */
@@ -55,6 +56,10 @@
           </div>
     </div>
 
+    <div class="container">
+        <p>User: "Describe Scene"</p>
+    </div>
+
     <div class="button-container">
         <button id="playButton">
             <span class="circle1"></span>
@@ -62,7 +67,33 @@
             <span class="circle3"></span>
             <span class="circle4"></span>
             <span class="circle5"></span>
-            <span class="text">Say Hello</span>
+            <span class="text">Scene Description</span>
+        </button>
+    </div>
+
+    <div class="button-container">
+        <button id="options_after_describing_scene">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Options</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <p>User: "Return to Homepage"</p>
+    </div>
+
+    <div class="button-container">
+        <button id="options_homepage">
+            <span class="circle1"></span>
+            <span class="circle2"></span>
+            <span class="circle3"></span>
+            <span class="circle4"></span>
+            <span class="circle5"></span>
+            <span class="text">Options</span>
         </button>
     </div>
 
@@ -73,7 +104,27 @@
         // Add event listener to the button
         button.addEventListener('click', function() {
             // Create an audio element
-            var audio = new Audio('/Users/marwansorour/Desktop/EyeGlasses/ElevenLabs_2024-05-02T19_41_48_Serena.mp3'); 
+            var audio = new Audio('AudioFiles/birthday.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
+        var button1 = document.getElementById('options_after_describing_scene');
+
+        // Add event listener to the button
+        button1.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/optionAfterImage.mp3'); 
+            // Play the audio
+            audio.play();
+        });
+
+        var button2 = document.getElementById('options_homepage');
+
+        // Add event listener to the button
+        button2.addEventListener('click', function() {
+            // Create an audio element
+            var audio = new Audio('AudioFiles/homePageOptions.mp3'); 
             // Play the audio
             audio.play();
         });
